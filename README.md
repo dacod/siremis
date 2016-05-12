@@ -41,3 +41,15 @@ Paid support or development extensions for SIREMIS:
 Project Management:
 
   * Elena-Ramona Modroiu - http://www.asipto.com
+
+For install from GIT execute the commands bellow:
+
+
+  make apache24-conf
+  vim /etc/apache2/sites-enabled/000-default.conf 
+  service apache2 restart
+  mkdir -p /var/www/html/siremis/siremis/cache/metadata
+  cd /var/www/html/siremis/ ; make chown
+  mkdir /var/www/html/siremis/siremis/themes/default/template/cpl
+  make chown
+
